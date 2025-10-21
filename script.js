@@ -88,7 +88,9 @@ const POST = async () => {
    console.log(response);
    console.log(json);
 
-   id = json.id - 100;
+   id = json.id - 100; // ...ettersom "jsonplaceholer"-API-et kun gir `101` som `id` i responsen,
+                       // og `/posts/:id` kun går til `100`, så trekker vi ifra (eksempelvis) `100`
+                       // for å "simulere" en gyldig ID som vi kan bruke ved neste GET forespørsel.
    console.log("POST - Finished...");
 };
 
