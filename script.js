@@ -98,7 +98,7 @@ const POST = async () => {
 const GET = async () => {
     console.log("GET - Running...");
    const response = await fetch(
-      `https://jsonplaceholder.typicode.com/postss/${id}`
+      `https://jsonplaceholder.typicode.com/posts/${id}`
    );
    console.log(id);
 
